@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptar/Desencriptar Mensajes</title>
+  <link rel="stylesheet" href="/files/style.css">
+</head>
+<body>
+  <div class="content">
+    <div class="header">
+      <div class="logo">
+        <img src="/img/j.png" alt="Icono adicional">
+      </div>
+    </div>
+    <div class="container">
+      <div class="left-section">
+        <h2 id="title">Encriptador / Desencriptador</h2>
+        <div class="cont-left">
+          <textarea type="text" id="text-input-left"
+            placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
+        </div>
+        <div class="footer">
+          <img src="/img/icone.png" alt="Icono adicional">
+          <span>Solo letras minúsculas y sin acento</span>
+        </div>
+        <div class="buttons">
+          <button id="encrypt-button">Encriptar</button>
+          <button id="decrypt-button">Desencriptar</button>
+        </div>
+      </div>
+      <div class="right-section">
+        <h2 id="title">Encriptado / Desencriptado</h2>
+        <div class="cont-right-one">
+          <img src="/img/sir.png" alt="Ilustración de mensaje no encontrado" id="sir">
+          <h3 id="message-status">Ningún mensaje fue encontrado</h3>
+        </div>
+        <div class="cont-right-two" style="display: none;">
+          <textarea type="text" id="text-input-right-two"
+            placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
+          <button id="copy-button">Copiar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/files/app.js"></script>
+</body>
+
+</html>
